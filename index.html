@@ -29,6 +29,35 @@
   </div>
 
   <script src="script.js"></script>
+  <script>
+    // Función para acortar el enlace con Bitly
+    function shortenLink(longUrl, callback) {
+      const accessToken = 'TU_TOKEN_DE_BITLY'; // Reemplaza con tu token de acceso de Bitly
+      const apiUrl = `https://api-ssl.bitly.com/v4/shorten`;
+
+      $.ajax({
+        url: apiUrl,
+        type: 'POST',
+        dataType: 'json',
+        contentType: 'application/json',
+        headers: {
+          'Authorization': `Bearer ${accessToken}`,
+        },
+        data: JSON.stringify({
+          long_url: longUrl,
+        }),
+        success: function (response) {
+          const shortUrl = response.id;
+          callback(shortUrl);
+        },
+        error: function (error) {
+          console.error('Error al acortar el enlace con Bitly:', error);
+          callback(longUrl); // En caso de error, usa el enlace largo
+        },
+      });
+    }
+
+    // Resto del contenido del script.js
+  </script>
 </body>
 </html>
-
