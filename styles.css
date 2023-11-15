@@ -1,7 +1,6 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  padding-top: 80px; /* Ajusta según la altura de tu banner */
 }
 
 header {
@@ -9,10 +8,24 @@ header {
   color: #fff;
   text-align: center;
   padding: 20px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1;
+  position: relative;
+}
+
+#profile-header {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
 }
 
 #catalog {
@@ -20,7 +33,6 @@ header {
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 16px;
   padding: 20px;
-  /* Agrega más estilos según el diseño de tu catálogo */
 }
 
 .product {
