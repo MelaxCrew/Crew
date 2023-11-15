@@ -1,6 +1,18 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
+  padding-top: 80px; /* Ajusta según la altura de tu banner */
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
 }
 
 #banner {
