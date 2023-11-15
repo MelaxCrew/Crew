@@ -38,3 +38,29 @@ products.forEach(product => {
 
 // Agrega un manejador de clic para las imágenes del catálogo
 catalogElement.addEventListener('click', function (event) {
+  if (event.target.tagName === 'IMG') {
+    openPreview(event.target.src);
+  }
+});
+
+// Función para abrir la vista previa
+function openPreview(imageSrc) {
+  const previewContent = document.getElementById('preview-content');
+
+  // Limpia el contenido existente
+  previewContent.innerHTML = '';
+
+  // Crea la imagen y agrega al contenedor de vista previa
+  const previewImage = document.createElement('img');
+  previewImage.src = imageSrc;
+  previewImage.classList.add('preview-image');
+  previewContent.appendChild(previewImage);
+
+  // Muestra el contenedor de vista previa
+  previewContainer.style.display = 'block';
+}
+
+// Función para cerrar la vista previa
+function closePreview() {
+  document.getElementById('preview-container').style.display = 'none';
+}
