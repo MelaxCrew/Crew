@@ -1,3 +1,28 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+#profile-header {
+  display: flex;
+  justify-content: center;
+}
+
+#profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
 #catalog {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
