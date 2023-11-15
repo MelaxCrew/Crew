@@ -98,11 +98,11 @@ function openPreview(imageSrc, description) {
 
   // Acorta el enlace directo usando Bitly
   shortenLink(directLink, function (shortenedLink) {
-    // Construye la miniatura de la imagen utilizando el enlace directo
-    const thumbnailImage = `[Miniatura de la Imagen](${directLink})`;
+    // Obtén el enlace directo a la imagen (sin acortar)
+    const directImageLink = window.location.origin + '/' + imageSrc;
 
-    // Modifica el enlace de WhatsApp para incluir la miniatura de la imagen y el enlace acortado
-    const whatsappLink = `https://wa.me/34627629079?text=¡Hola! Estoy interesado en comprar este producto: ${description} - ${shortenedLink}%0a%0a${encodeURIComponent(thumbnailImage)}`;
+    // Modifica el enlace de WhatsApp para incluir el enlace acortado y la miniatura de la imagen
+    const whatsappLink = `https://wa.me/34627629079?text=¡Hola! Estoy interesado en comprar este producto: ${description} - ${shortenedLink}%0a%0a${directImageLink}`;
     document.getElementById('whatsapp-btn').href = whatsappLink;
 
     previewContainer.style.display = 'flex';
