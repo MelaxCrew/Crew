@@ -37,15 +37,16 @@ products.forEach(product => {
 });
 
 // Agrega un manejador de clic para las imágenes del catálogo
-catalogElement.addEventListener('click', function (event) {
+catalogElement.addEventListener('click', (event) => {
   if (event.target.tagName === 'IMG') {
-    openPreview(event.target.src);
+    const imageSrc = event.target.src;
+    openPreviewWithArrows(imageSrc);
   }
 });
 
-// Función para abrir la vista previa
-function openPreview(imageSrc) {
-  const previewContent = document.getElementById('preview-content');
+// Función para abrir la vista previa con flechas
+function openPreviewWithArrows(imageSrc) {
+  const currentIndex = products.findIndex(product => product.image === imageSrc);
 
   // Limpia el contenido existente
   previewContent.innerHTML = '';
@@ -56,11 +57,45 @@ function openPreview(imageSrc) {
   previewImage.classList.add('preview-image');
   previewContent.appendChild(previewImage);
 
+  // Agrega las flechas de desplazamiento
+  const prevButton = document.createElement('button');
+  prevButton.textContent = '❮';
+  prevButton.classList.add('prev-btn');
+  prevButton.addEventListener('click', () => showPrevImage(currentIndex));
+  previewContent.appendChild(prevButton);
+
+  const nextButton = document.createElement('button');
+  nextButton.textContent = '❯';
+  nextButton.classList.add('next-btn');
+  nextButton.addEventListener('click', () => showNextImage(currentIndex));
+  previewContent.appendChild(nextButton);
+
+  // Agrega el botón de cierre
+  const closeButton = document.createElement('div');
+  closeButton.textContent = '✕';
+  closeButton.classList.add('close-btn');
+  closeButton.addEventListener('click', closePreview);
+  previewContent.appendChild(closeButton);
+
   // Muestra el contenedor de vista previa
   previewContainer.style.display = 'block';
 }
 
 // Función para cerrar la vista previa
 function closePreview() {
-  document.getElementById('preview-container').style.display = 'none';
+  previewContainer.style.display = 'none';
+}
+
+// Función para mostrar la imagen anterior
+function showPrevImage(currentIndex) {
+  const prevIndex = (currentIndex - 1 + products.length) % products.length;
+  const prevImageSrc = products[prevIndex].image;
+  openPreviewWithArrows(prevImageSrc);
+}
+
+// Función para mostrar la siguiente imagen
+function showNextImage(currentIndex) {
+  const nextIndex = (currentIndex + 1) % products.length;
+  const nextImageSrc = products[nextIndex].image;
+  openPreviewWithArrows(nextImageSrc);
 }
