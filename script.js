@@ -23,13 +23,37 @@ const products = [
   { image: 'images/nike_dunk_skate_girl.png', description: 'nike dunk skate like a girl' },
   { image: 'images/nike_dunk_coast.png', description: 'nike dunk coast' },
   { image: 'images/nike_dunk_burdeos.png', description: 'nike dunk burdeos' },
+  
   { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
+ 
   { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+  
   { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+  
   { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
+  
   { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+  
   { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+  
   { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
+  
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
+ 
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+  
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+  
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
+  
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+  
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+  
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
+  
   { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
   // Agrega más productos según sea necesario
 ];
