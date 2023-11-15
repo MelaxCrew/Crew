@@ -5,8 +5,20 @@ const previewImage = document.getElementById('preview-image');
 
 // Ejemplo de datos con URL de productos
 const products = [
-  { image: 'ruta-a-tu-imagen-1.jpg' },
-  { image: 'ruta-a-tu-imagen-2.jpg' },
+  { image: 'images/jordan 1 buble.png' },
+  { image: 'images/jordan 1 hyper royal.png' },
+  { image: 'images/jordan 4 white cement.png' },
+  { image: 'images/yeesy 350 negra.png' },
+  { image: 'images/yeesy boost 350.png' },
+  { image: 'images/jordan 1 buble.png' },
+  { image: 'images/jordan 1 buble.png' },
+  { image: 'images/jordan 1 buble.png' },
+  { image: 'images/jordan 1 buble.png' },
+  { image: 'images/jordan 1 buble.png' },
+  { image: 'images/jordan 1 buble.png' },
+  { image: 'images/jordan 1 buble.png' },
+  { image: 'images/jordan 1 buble.png' },
+  { image: 'images/jordan 1 buble.png' },
   // Agrega más productos según sea necesario
 ];
 
