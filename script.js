@@ -79,6 +79,8 @@ function openPreviewWithArrows(imageSrc) {
 
   // Muestra el contenedor de vista previa
   previewContainer.style.display = 'flex';
+  previewContainer.style.justifyContent = 'center';
+  previewContainer.style.alignItems = 'center';
 }
 
 // Función para cerrar la vista previa
