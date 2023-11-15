@@ -6,31 +6,8 @@ const previewDescription = document.getElementById('preview-description');
 
 // Ejemplo de datos con URL de productos y descripciones
 const products = [
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
-  { image: 'images/jordan_1_hyper_royal.png', description: 'Descripción del Producto 2' },
-  { image: 'images/jordan_4_white_cement.png', description: 'Descripción del Producto 1' },
-  { image: 'images/yeesy_350_negra.png', description: 'Descripción del Producto 2' },
-  { image: 'images/yeesy_boost_350.png', description: 'Descripción del Producto 1' },
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+  { image: 'images/tu-imagen-1.jpg', description: 'Descripción del Producto 1' },
+  { image: 'images/tu-imagen-2.jpg', description: 'Descripción del Producto 2' },
   // Agrega más productos según sea necesario
 ];
 
@@ -83,7 +60,8 @@ products.forEach(product => {
 catalogElement.addEventListener('click', (event) => {
   if (event.target.tagName === 'IMG') {
     const imageSrc = event.target.src;
-    openPreview(imageSrc, event.target.alt);
+    const description = event.target.alt;
+    openPreview(imageSrc, description);
   }
 });
 
@@ -97,14 +75,13 @@ function openPreview(imageSrc, description) {
 
   // Acorta el enlace directo usando Bitly
   shortenLink(directLink, function (shortenedLink) {
-    // Modifica el enlace de WhatsApp para incluir el enlace acortado a la imagen
-    const whatsappLink = `https://wa.me/34627629079?text=¡Hola! Estoy interesado en comprar este producto: ${description} - ${shortenedLink}%0a%0a${directImageLink}`;
+    // Modifica el enlace de WhatsApp para incluir la miniatura de la imagen y el enlace acortado
+    const whatsappLink = `https://wa.me/34627629079?text=¡Hola! Estoy interesado en comprar este producto: ${description}%0a[![Miniatura de la Imagen](${directLink})](${shortenedLink})`;
     document.getElementById('whatsapp-btn').href = whatsappLink;
 
     previewContainer.style.display = 'flex';
   });
 }
-
 
 // Cerrar la vista previa al hacer clic en ella
 previewContainer.addEventListener('click', closePreview);
