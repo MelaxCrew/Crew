@@ -93,8 +93,8 @@ function openPreview(imageSrc, description) {
   previewImage.src = imageSrc;
   previewDescription.textContent = description;
 
-  // Obtén el enlace directo a la imagen
-  const directLink = window.location.origin + '/' + imageSrc; // Ajusta según la estructura de tu proyecto
+  // Obtén el enlace directo a la imagen (sin window.location.origin)
+  const directLink = imageSrc; // Ajusta según la estructura de tu proyecto
 
   // Acorta el enlace directo usando Bitly
   shortenLink(directLink, function (shortenedLink) {
