@@ -51,6 +51,34 @@ products.forEach((product, index) => {
   imgElement.addEventListener('click', () => openPreview(product.image, product.description));
 });
 
+// Función para acortar el enlace con Bitly
+function shortenLink(longUrl, callback) {
+  const accessToken = 'TU_TOKEN_DE_BITLY'; // Reemplaza con tu token de acceso de Bitly
+  const apiUrl = `https://api-ssl.bitly.com/v4/shorten`;
+
+  $.ajax({
+    url: apiUrl,
+    type: 'POST',
+    dataType: 'json',
+    contentType: 'application/json',
+    headers: {
+      'Authorization': `Bearer ${accessToken}`,
+    },
+    data: JSON.stringify({
+      long_url: longUrl,
+    }),
+    success: function (response) {
+      const shortUrl = response.id;
+      callback(shortUrl);
+    },
+    error: function (error) {
+      console.error('Error al acortar el enlace con Bitly:', error);
+      callback(longUrl); // En caso de error, usa el enlace largo
+    },
+  });
+}
+
+
 // Función para abrir la vista previa
 function openPreview(imageSrc, description) {
   previewImage.src = imageSrc;
@@ -66,12 +94,29 @@ function openPreview(imageSrc, description) {
   previewContainer.style.display = 'flex';
 }
 
-// Función para cerrar la vista previa
-function closePreview() {
-  previewContainer.style.display = 'none';
+// Función para abrir la vista previa
+function openPreview(imageSrc, description) {
+  previewImage.src = imageSrc;
+  previewDescription.textContent = description;
+
+  // Obtén el enlace directo a la imagen
+  const directLink = window.location.origin + '/' + imageSrc; // Ajusta según la estructura de tu proyecto
+
+  // Acorta el enlace directo usando Bitly
+  shortenLink(directLink, function (shortenedLink) {
+    // Modifica el enlace de WhatsApp para incluir el enlace acortado a la imagen
+    const whatsappLink = `https://wa.me/34627629079?text=¡Hola! Estoy interesado en comprar este producto: ${description} - ${shortenedLink}`;
+    document.getElementById('whatsapp-btn').href = whatsappLink;
+
+    previewContainer.style.display = 'flex';
+  });
 }
 
 // Función para cerrar la vista previa
 function closePreview() {
   previewContainer.style.display = 'none';
 }
+
+</script>
+</body>
+</html>
