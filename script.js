@@ -55,6 +55,14 @@ products.forEach((product, index) => {
 function openPreview(imageSrc, description) {
   previewImage.src = imageSrc;
   previewDescription.textContent = description;
+
+  // Obtén el enlace directo a la imagen
+  const directLink = window.location.origin + '/' + imageSrc; // Ajusta según la estructura de tu proyecto
+
+  // Modifica el enlace de WhatsApp para incluir el enlace directo a la imagen
+  const whatsappLink = `https://wa.me/34627629079?text=¡Hola! Estoy interesado en comprar este producto: ${description} - ${directLink}`;
+  document.getElementById('whatsapp-btn').href = whatsappLink;
+
   previewContainer.style.display = 'flex';
 }
 
