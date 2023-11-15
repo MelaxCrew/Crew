@@ -5,8 +5,32 @@ const previewImage = document.getElementById('preview-image');
 
 // Ejemplo de datos con URL de productos
 const products = [
-  { image: 'ruta-a-tu-imagen-1.jpg' },
-  { image: 'ruta-a-tu-imagen-2.jpg' },
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
+  { image: 'images/jordan_1_hyper_royal.png', description: 'Descripción del Producto 2' },
+  { image: 'images/jordan_4_white_cement.png', description: 'Descripción del Producto 1' },
+  { image: 'images/yeesy_350_negra.png', description: 'Descripción del Producto 2' },
+  { image: 'images/yeesy_boost_350.png', description: 'Descripción del Producto 1' },
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+
   // Agrega más productos según sea necesario
 ];
 
