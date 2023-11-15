@@ -1,4 +1,6 @@
 const catalogElement = document.getElementById('catalog');
+const previewContainer = document.getElementById('preview-container');
+const previewContent = document.getElementById('preview-content');
 
 // Ejemplo de datos con URL de gatitos
 const products = [
@@ -33,3 +35,6 @@ products.forEach(product => {
 
   catalogElement.appendChild(productElement);
 });
+
+// Agrega un manejador de clic para las imágenes del catálogo
+catalogElement.addEventListener('click', function (event) {
