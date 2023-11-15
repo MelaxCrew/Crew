@@ -38,7 +38,7 @@ const products = [
   
   { image: 'images/adidas_campus_badbunny.png', description: 'adidas campus bad bunny' },
   
-  { image: 'images/lv_trainer_blue.png', description: 'luis vuitton trainer blue' },
+  { image: 'images/lv_trainer_blue.png', description: 'louis vuitton trainer blue' },
 
   { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
  
