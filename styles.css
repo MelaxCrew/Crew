@@ -59,17 +59,10 @@ body {
 }
 
 #preview-image {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 1080px;
+  max-height: 1350px;
   width: auto;
   height: auto;
-  object-fit: contain;
-  margin-bottom: 10px; /* Ajusta el espacio entre la imagen y la descripción */
-}
-
-#preview-description {
-  margin: 0; /* Elimina el margen predeterminado */
-  font-size: 16px; /* Ajusta el tamaño del texto si es necesario */
 }
 
 .close-btn {
