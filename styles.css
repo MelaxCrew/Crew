@@ -3,29 +3,9 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  position: relative;
-}
-
-#profile-header {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
+#profile-header,
 #profile-image {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #fff;
+  /* Estilos eliminados según tu solicitud */
 }
 
 #catalog {
@@ -82,11 +62,10 @@ header {
   justify-content: center;
   align-items: center;
   height: 100%;
-  position: relative; /* Añade esta línea */
 }
 
 .preview-image {
-  max-width: 80%; /* Puedes ajustar esto según tus preferencias */
-  max-height: 80vh; /* Puedes ajustar esto según tus preferencias */
+  max-width: 80%;
+  max-height: 80vh;
   object-fit: contain;
 }
