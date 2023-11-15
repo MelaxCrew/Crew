@@ -2,6 +2,7 @@ const catalogElement = document.getElementById('catalog');
 const previewContainer = document.getElementById('preview-container');
 const previewContent = document.getElementById('preview-content');
 const previewImage = document.getElementById('preview-image');
+const previewDescription = document.getElementById('preview-description');
 
 // Ejemplo de datos con URL de productos
 const products = [
@@ -43,16 +44,21 @@ products.forEach((product, index) => {
   imgElement.src = product.image;
   imgElement.alt = `Producto ${index + 1}`;
 
+  const descriptionElement = document.createElement('p');
+  descriptionElement.textContent = product.description;
+
   productElement.appendChild(imgElement);
+  productElement.appendChild(descriptionElement);
   catalogElement.appendChild(productElement);
 
   // Agrega un manejador de clic para las imágenes del catálogo
-  imgElement.addEventListener('click', () => openPreview(product.image));
+  imgElement.addEventListener('click', () => openPreview(product.image, product.description));
 });
 
 // Función para abrir la vista previa
-function openPreview(imageSrc) {
+function openPreview(imageSrc, description) {
   previewImage.src = imageSrc;
+  previewDescription.textContent = description;
   previewContainer.style.display = 'flex';
 }
 
