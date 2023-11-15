@@ -64,6 +64,12 @@ body {
   width: auto;
   height: auto;
   object-fit: contain;
+  margin-bottom: 10px;
+}
+
+#preview-description {
+  margin: 0; /* Elimina el margen predeterminado */
+  font-size: 16px; /* Ajusta el tamaño del texto si es necesario */
 }
 
 .close-btn {
