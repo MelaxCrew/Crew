@@ -34,6 +34,33 @@ const products = [
   // Agrega más productos según sea necesario
 ];
 
+// Función para acortar el enlace con Bitly
+function shortenLink(longUrl, callback) {
+  const accessToken = '6b65158f020c81b67e6f1aba523f29f3f5674ced'; // Reemplaza con tu token de acceso de Bitly
+  const apiUrl = `https://api-ssl.bitly.com/v4/shorten`;
+
+  $.ajax({
+    url: apiUrl,
+    type: 'POST',
+    dataType: 'json',
+    contentType: 'application/json',
+    headers: {
+      'Authorization': `Bearer ${accessToken}`,
+    },
+    data: JSON.stringify({
+      long_url: longUrl,
+    }),
+    success: function (response) {
+      const shortUrl = response.id;
+      callback(shortUrl);
+    },
+    error: function (error) {
+      console.error('Error al acortar el enlace con Bitly:', error);
+      callback(longUrl); // En caso de error, usa el enlace largo
+    },
+  });
+}
+
 // Crear elementos de producto y agregar al catálogo
 products.forEach(product => {
   const productElement = document.createElement('div');
