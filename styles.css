@@ -87,7 +87,9 @@ header {
 }
 
 #preview-content {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
 }
 
@@ -96,9 +98,6 @@ header {
   font-size: 30px;
   color: #fff;
   cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
   border: none;
