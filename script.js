@@ -1,48 +1,38 @@
 const catalogElement = document.getElementById('catalog');
 const previewContainer = document.getElementById('preview-container');
 const previewContent = document.getElementById('preview-content');
+const previewImage = document.getElementById('preview-image');
 
+// Ejemplo de datos con URL de productos
 const products = [
-  // ... (tu array de productos permanece igual)
+  { image: 'ruta-a-tu-imagen-1.jpg' },
+  { image: 'ruta-a-tu-imagen-2.jpg' },
+  // Agrega más productos según sea necesario
 ];
 
-products.forEach(product => {
+// Crear elementos de producto y agregar al catálogo
+products.forEach((product, index) => {
   const productElement = document.createElement('div');
   productElement.classList.add('product');
 
   const imgElement = document.createElement('img');
   imgElement.src = product.image;
-  imgElement.alt = product.name;
-
-  const nameElement = document.createElement('p');
-  nameElement.textContent = product.name;
+  imgElement.alt = `Producto ${index + 1}`;
 
   productElement.appendChild(imgElement);
-  productElement.appendChild(nameElement);
-
   catalogElement.appendChild(productElement);
+
+  // Agrega un manejador de clic para las imágenes del catálogo
+  imgElement.addEventListener('click', () => openPreview(product.image));
 });
 
-catalogElement.addEventListener('click', (event) => {
-  if (event.target.tagName === 'IMG') {
-    const imageSrc = event.target.src;
-    openPreview(imageSrc);
-  }
-});
-
+// Función para abrir la vista previa
 function openPreview(imageSrc) {
-  previewContent.innerHTML = '';
-
-  const previewImage = document.createElement('img');
   previewImage.src = imageSrc;
-  previewImage.classList.add('preview-image');
-  previewContent.appendChild(previewImage);
-
   previewContainer.style.display = 'flex';
 }
 
-previewContainer.addEventListener('click', closePreview);
-
+// Función para cerrar la vista previa
 function closePreview() {
   previewContainer.style.display = 'none';
 }
