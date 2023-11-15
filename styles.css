@@ -82,4 +82,11 @@ header {
   justify-content: center;
   align-items: center;
   height: 100%;
+  position: relative; /* Añade esta línea */
+}
+
+.preview-image {
+  max-width: 80%; /* Puedes ajustar esto según tus preferencias */
+  max-height: 80vh; /* Puedes ajustar esto según tus preferencias */
+  object-fit: contain;
 }
