@@ -6,7 +6,7 @@ const previewDescription = document.getElementById('preview-description');
 
 // Ejemplo de datos con URL de productos y descripciones
 const products = [
-  { image: 'images/tu-imagen-1.jpg', description: 'Descripción del Producto 1' },
+  { image: 'images/jordan 1 buble.png', description: 'Descripción del Producto 1' },
   { image: 'images/tu-imagen-2.jpg', description: 'Descripción del Producto 2' },
   // Agrega más productos según sea necesario
 ];
