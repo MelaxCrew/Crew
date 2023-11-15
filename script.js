@@ -99,7 +99,7 @@ function openPreview(imageSrc, description) {
   // Acorta el enlace directo usando Bitly
   shortenLink(directLink, function (shortenedLink) {
     // Modifica el enlace de WhatsApp para incluir el enlace acortado a la imagen
-    const whatsappLink = `https://wa.me/34627629079?text=¡Hola! Estoy interesado en comprar este producto: ${description} - ${shortenedLink}`;
+    const whatsappLink = `https://wa.me/34627629079?text=¡Hola! Estoy interesado en comprar: ${description} - ${shortenedLink}`;
     document.getElementById('whatsapp-btn').href = whatsappLink;
 
     previewContainer.style.display = 'flex';
