@@ -88,7 +88,7 @@ catalogElement.addEventListener('click', (event) => {
   }
 });
 
-// Función para abrir la vista previa
+  // Función para abrir la vista previa
 function openPreview(imageSrc, description) {
   previewImage.src = imageSrc;
   previewDescription.textContent = description;
@@ -98,11 +98,8 @@ function openPreview(imageSrc, description) {
 
   // Acorta el enlace directo usando Bitly
   shortenLink(directLink, function (shortenedLink) {
-    // Obtén el enlace directo a la imagen (sin acortar)
-    const directImageLink = window.location.origin + '/' + imageSrc;
-
-    // Modifica el enlace de WhatsApp para incluir el enlace acortado y la miniatura de la imagen
-    const whatsappLink = `https://wa.me/34627629079?text=¡Hola! Estoy interesado en comprar este producto: ${description} - ${shortenedLink}%0a%0a${directImageLink}`;
+    // Modifica el enlace de WhatsApp para incluir el enlace acortado a la imagen
+    const whatsappLink = `https://wa.me/34627629079?text=¡Hola! Estoy interesado en comprar este producto: ${description} - ${shortenedLink}`;
     document.getElementById('whatsapp-btn').href = whatsappLink;
 
     previewContainer.style.display = 'flex';
