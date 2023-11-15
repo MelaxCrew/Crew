@@ -7,19 +7,22 @@
   <title>Catálogo de Productos</title>
 </head>
 <body>
-  <header>
-    <div id="profile-header">
-      <img src="images/baner portada.png" alt="Foto de Perfil" id="profile-image">
-    </div>
-  </header>
+  <div id="banner">
+    <!-- Banner para la portada -->
+    <img src="ruta-a-tu-imagen-portada.jpg" alt="Portada">
+  </div>
 
   <div id="catalog">
-    <!-- Aquí se mostrarán las fotos de los productos -->
+    <!-- Catálogo de productos -->
+    <!-- La estructura se llenará dinámicamente con JavaScript -->
   </div>
 
   <div id="preview-container">
     <span class="close-btn" onclick="closePreview()">×</span>
-    <div id="preview-content"></div>
+    <div id="preview-content">
+      <img id="preview-image" alt="Vista Previa">
+      <a id="whatsapp-btn" href="https://wa.me/34627629079" target="_blank">Pedir por WhatsApp <img src="whatsapp-icon.png" alt="WhatsApp"></a>
+    </div>
   </div>
 
   <script src="script.js"></script>
