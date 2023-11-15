@@ -78,7 +78,7 @@ function openPreviewWithArrows(imageSrc) {
   previewContent.appendChild(closeButton);
 
   // Muestra el contenedor de vista previa
-  previewContainer.style.display = 'block';
+  previewContainer.style.display = 'flex';
 }
 
 // Función para cerrar la vista previa
