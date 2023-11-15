@@ -40,14 +40,12 @@ products.forEach(product => {
 catalogElement.addEventListener('click', (event) => {
   if (event.target.tagName === 'IMG') {
     const imageSrc = event.target.src;
-    openPreviewWithArrows(imageSrc);
+    openPreview(imageSrc);
   }
 });
 
-// Función para abrir la vista previa con flechas
-function openPreviewWithArrows(imageSrc) {
-  const currentIndex = products.findIndex(product => product.image === imageSrc);
-
+// Función para abrir la vista previa
+function openPreview(imageSrc) {
   // Limpia el contenido existente
   previewContent.innerHTML = '';
 
@@ -57,47 +55,14 @@ function openPreviewWithArrows(imageSrc) {
   previewImage.classList.add('preview-image');
   previewContent.appendChild(previewImage);
 
-  // Agrega las flechas de desplazamiento
-  const prevButton = document.createElement('button');
-  prevButton.textContent = '❮';
-  prevButton.classList.add('prev-btn');
-  prevButton.addEventListener('click', () => showPrevImage(currentIndex));
-  previewContent.appendChild(prevButton);
-
-  const nextButton = document.createElement('button');
-  nextButton.textContent = '❯';
-  nextButton.classList.add('next-btn');
-  nextButton.addEventListener('click', () => showNextImage(currentIndex));
-  previewContent.appendChild(nextButton);
-
-  // Agrega el botón de cierre
-  const closeButton = document.createElement('div');
-  closeButton.textContent = '✕';
-  closeButton.classList.add('close-btn');
-  closeButton.addEventListener('click', closePreview);
-  previewContent.appendChild(closeButton);
-
   // Muestra el contenedor de vista previa
   previewContainer.style.display = 'flex';
-  previewContainer.style.justifyContent = 'center';
-  previewContainer.style.alignItems = 'center';
 }
+
+// Cerrar la vista previa al hacer clic en ella
+previewContainer.addEventListener('click', closePreview);
 
 // Función para cerrar la vista previa
 function closePreview() {
   previewContainer.style.display = 'none';
-}
-
-// Función para mostrar la imagen anterior
-function showPrevImage(currentIndex) {
-  const prevIndex = (currentIndex - 1 + products.length) % products.length;
-  const prevImageSrc = products[prevIndex].image;
-  openPreviewWithArrows(prevImageSrc);
-}
-
-// Función para mostrar la siguiente imagen
-function showNextImage(currentIndex) {
-  const nextIndex = (currentIndex + 1) % products.length;
-  const nextImageSrc = products[nextIndex].image;
-  openPreviewWithArrows(nextImageSrc);
 }
