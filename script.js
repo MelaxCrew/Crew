@@ -24,21 +24,21 @@ const products = [
   { image: 'images/nike_dunk_coast.png', description: 'nike dunk coast' },
   { image: 'images/nike_dunk_burdeos.png', description: 'nike dunk burdeos' },
   
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
+  { image: 'images/adidas_forum_badbunny_rosa.png', description: 'adidas forum bad bunny pink' },
  
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+  { image: 'nike_dunk_ow_blue.png', description: 'nike dunk off white blue' },
   
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+  { image: 'images/lv_trainer_black.png', description: 'louis vuitton trainer black' },
   
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
+  { image: 'images/jordan_4_ow.png', description: 'jordan 4 retro off white' },
   
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+  { image: 'images/nike_airforce_1_lv.png', description: 'nike air force 1 luis vuitton' },
   
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+  { image: 'images/nike_airforce_1_mid_07.png', description: 'nike air force 1 mid 07' },
   
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
+  { image: 'images/adidas_campus_badbunny.png', description: 'adidas campus bad bunny' },
   
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+  { image: 'images/lv_trainer_blue.png', description: 'luis vuitton trainer blue' },
 
   { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
  
