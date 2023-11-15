@@ -1,22 +1,19 @@
 const catalogElement = document.getElementById('catalog');
 
-// Ejemplo de datos (puedes reemplazarlo con tus propios productos y URLs de imágenes)
+// Ejemplo de datos con URL de gatitos
 const products = [
-  { name: 'Producto 1', image: 'URL_imagen_1.jpg' },
-  { name: 'Producto 2', image: 'URL_imagen_2.jpg' },
-  { name: 'Producto 2', image: 'URL_imagen_3.jpg' },
-  { name: 'Producto 2', image: 'URL_imagen_4.jpg' },
-  { name: 'Producto 2', image: 'URL_imagen_5.jpg' },
-  { name: 'Producto 2', image: 'URL_imagen_6.jpg' },
-  { name: 'Producto 2', image: 'URL_imagen_7.jpg' },
-  { name: 'Producto 2', image: 'URL_imagen_8.jpg' },
-  { name: 'Producto 2', image: 'URL_imagen_9.jpg' },
-  { name: 'Producto 2', image: 'URL_imagen_10.jpg' },
-  { name: 'Producto 2', image: 'URL_imagen_11.jpg' },
-  { name: 'Producto 2', image: 'URL_imagen_12.jpg' },
-  { name: 'Producto 2', image: 'URL_imagen_13.jpg' },
-  { name: 'Producto 2', image: 'URL_imagen_14.jpg' },
-  // Agrega más productos según sea necesario
+  { name: 'Gatito 1', image: 'https://placekitten.com/200/200' },
+  { name: 'Gatito 2', image: 'https://placekitten.com/201/200' },
+  { name: 'Gatito 3', image: 'https://placekitten.com/202/200' },
+  { name: 'Gatito 4', image: 'https://placekitten.com/203/200' },
+  { name: 'Gatito 5', image: 'https://placekitten.com/204/200' },
+  { name: 'Gatito 6', image: 'https://placekitten.com/205/200' },
+  { name: 'Gatito 7', image: 'https://placekitten.com/206/200' },
+  { name: 'Gatito 8', image: 'https://placekitten.com/207/200' },
+  { name: 'Gatito 9', image: 'https://placekitten.com/208/200' },
+  { name: 'Gatito 10', image: 'https://placekitten.com/209/200' },
+  { name: 'Gatito 11', image: 'https://placekitten.com/210/200' },
+  { name: 'Gatito 12', image: 'https://placekitten.com/211/200' },
 ];
 
 // Crear elementos de producto y agregar al catálogo
