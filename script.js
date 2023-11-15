@@ -26,7 +26,7 @@ const products = [
   
   { image: 'images/adidas_forum_badbunny_rosa.png', description: 'adidas forum bad bunny pink' },
  
-  { image: 'nike_dunk_ow_blue.png', description: 'nike dunk off white blue' },
+  { image: 'images/nike_dunk_ow_blue.png', description: 'nike dunk off white blue' },
   
   { image: 'images/lv_trainer_black.png', description: 'louis vuitton trainer black' },
   
