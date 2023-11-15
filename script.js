@@ -2,23 +2,12 @@ const catalogElement = document.getElementById('catalog');
 const previewContainer = document.getElementById('preview-container');
 const previewContent = document.getElementById('preview-content');
 const previewImage = document.getElementById('preview-image');
+const previewDescription = document.getElementById('preview-description');
 
-// Ejemplo de datos con URL de productos
+// Ejemplo de datos con URL de productos y descripciones
 const products = [
-  { image: 'images/jordan 1 buble.png' },
-  { image: 'images/jordan 1 hyper royal.png' },
-  { image: 'images/jordan 4 white cement.png' },
-  { image: 'images/yeesy 350 negra.png' },
-  { image: 'images/yeesy boost 350.png' },
-  { image: 'images/jordan 1 buble.png' },
-  { image: 'images/jordan 1 buble.png' },
-  { image: 'images/jordan 1 buble.png' },
-  { image: 'images/jordan 1 buble.png' },
-  { image: 'images/jordan 1 buble.png' },
-  { image: 'images/jordan 1 buble.png' },
-  { image: 'images/jordan 1 buble.png' },
-  { image: 'images/jordan 1 buble.png' },
-  { image: 'images/jordan 1 buble.png' },
+  { image: 'images/tu-imagen-1.jpg', description: 'Descripción del Producto 1' },
+  { image: 'images/tu-imagen-2.jpg', description: 'Descripción del Producto 2' },
   // Agrega más productos según sea necesario
 ];
 
@@ -31,17 +20,27 @@ products.forEach((product, index) => {
   imgElement.src = product.image;
   imgElement.alt = `Producto ${index + 1}`;
 
+  const descriptionElement = document.createElement('p');
+  descriptionElement.textContent = product.description;
+
   productElement.appendChild(imgElement);
+  productElement.appendChild(descriptionElement);
   catalogElement.appendChild(productElement);
 
   // Agrega un manejador de clic para las imágenes del catálogo
-  imgElement.addEventListener('click', () => openPreview(product.image));
+  imgElement.addEventListener('click', () => openPreview(product.image, product.description));
 });
 
 // Función para abrir la vista previa
-function openPreview(imageSrc) {
+function openPreview(imageSrc, description) {
   previewImage.src = imageSrc;
+  previewDescription.textContent = description;
   previewContainer.style.display = 'flex';
+}
+
+// Función para cerrar la vista previa
+function closePreview() {
+  previewContainer.style.display = 'none';
 }
 
 // Función para cerrar la vista previa
