@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  padding-top: 0px; /* Ajusta según la altura de tu banner */
+  padding-top: 80px; /* Ajusta según la altura de tu banner */
 }
 
 header {
@@ -15,20 +15,12 @@ header {
   z-index: 1;
 }
 
-#banner {
-  width: 100%;
-  overflow: hidden;
-}
-
-#banner img {
-  width: 100%;
-}
-
 #catalog {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 16px;
   padding: 20px;
+  /* Agrega más estilos según el diseño de tu catálogo */
 }
 
 .product {
@@ -75,36 +67,21 @@ header {
 
 #preview-content {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: center;
   height: 100%;
 }
 
-#preview-image {
+.preview-image {
   max-width: 100%;
   max-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  margin-bottom: 10px;
 }
 
-#preview-description {
-  margin: 0;
-  font-size: 16px;
-}
-
-#whatsapp-btn {
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
   color: #fff;
-  text-decoration: none;
-  padding: 10px;
-  background-color: green;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-}
-
-#whatsapp-btn img {
-  margin-left: 5px;
+  font-size: 24px;
+  cursor: pointer;
 }
