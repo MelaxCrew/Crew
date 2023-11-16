@@ -23,31 +23,40 @@ const products = [
   { image: 'images/nike_dunk_skate_girl.png', description: 'nike dunk skate like a girl' },
   { image: 'images/nike_dunk_coast.png', description: 'nike dunk coast' },
   { image: 'images/nike_dunk_burdeos.png', description: 'nike dunk burdeos' },
-  
   { image: 'images/adidas_forum_badbunny_rosa.png', description: 'adidas forum bad bunny pink' },
- 
   { image: 'images/nike_dunk_ow_blue.png', description: 'nike dunk off white blue' },
-  
   { image: 'images/lv_trainer_black.png', description: 'louis vuitton trainer black' },
-  
   { image: 'images/jordan_4_ow.png', description: 'jordan 4 retro off white' },
-  
   { image: 'images/nike_airforce_1_lv.png', description: 'nike air force 1 luis vuitton' },
-  
   { image: 'images/nike_airforce_1_mid_07.png', description: 'nike air force 1 mid 07' },
-  
   { image: 'images/adidas_campus_badbunny.png', description: 'adidas campus bad bunny' },
-  
   { image: 'images/lv_trainer_blue.png', description: 'louis vuitton trainer blue' },
+  { image: 'images/adidas_stan_smith.png', description: 'adidas stan smith' },
+  { image: 'images/af1_white.png', description: 'af1 white' },
+  { image: 'images/adidas_yeesy_boost_350_v2cinder.png', description: 'adidas yeesy boost 350 cinder' },
+  { image: 'images/lv_trainer_green.png', description: 'louis vuitton trainer green' },
+  { image: 'images/adidas_forum_colors_pastel.png', description: 'adidas forum colors pastel' },  
+  { image: 'images/adidas_forum_white_pink.png', description: 'adidas forum white pink' },
+  { image: 'images/adidas_2000_blue.png', description: 'adidas 2000 blue' },
+  { image: 'images/adidas_2000_beige.png', description: 'adidas 2000 beige' },
+  { image: 'images/adidas_forum_low_pink.png', description: 'adidas forum low pink' },
+  { image: 'images/jordan_1_low_se_craft.png', description: 'jordan 1 low SE craft' },
+  { image: 'images/adidas_superstar_kevinlyons.png', description: 'adidas superstar kevin lyons' },
+  { image: 'images/adidas_superstar_white_mujer.png', description: 'adidas superstar white mujer' },
+  { image: 'images/adidas_superstar_black_mujer.png', description: 'adidas superstar black mujer' },
+  { image: 'images/adidas_fusion_blue.png', description: 'adidas fusion blue' },
+  { image: 'images/adidas_fusion_beige.png', description: 'adidas fusion beige' },
+  { image: 'images/nike_dunk_pink.png', description: 'nike dunk pink' },
 
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
- 
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
   
   { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
   
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+  
   { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
   
+  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+
   { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
   
   { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
