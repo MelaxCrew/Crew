@@ -47,23 +47,46 @@ const products = [
   { image: 'images/adidas_fusion_blue.png', description: 'adidas fusion blue' },
   { image: 'images/adidas_fusion_beige.png', description: 'adidas fusion beige' },
   { image: 'images/nike_dunk_pink.png', description: 'nike dunk pink' },
-
-  
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
-  
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
-  
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
-  
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
-
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
-  
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
-  
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 1' },
-  
-  { image: 'images/jordan_1_buble.png', description: 'Descripción del Producto 2' },
+{ image: 'images/jordan_1_lost_and_found.png', description: 'jordan 1 lost and found' },
+  { image: 'images/sandalias_uptempo_white_blue.png', description: 'sandalias uptempo white blue' },
+  { image: 'images/new_balance_1906_neon.png', description: 'new balance 1906 neon' },
+  { image: 'images/new_balance_9060_sea_salt.png', description: 'new balance 9060 sea salt' },
+  { image: 'images/new_balance_9060_penny_cookie_pink.png', description: 'new balance 9060 penny cookie pink' },
+  { image: 'images/jordan_1_mid_se_space_jam.png', description: 'jordan 1 mid se space jam' },
+  { image: 'images/adidas_forum_bad_bunny_cafe.png', description: 'adidas forum bad bunny cafe' },
+  { image: 'images/jordan_1_og_travis_scott.png', description: 'jordan 1 og travis scott' },
+  { image: 'images/af1_flyknit.png', description: 'af1 flyknit' },
+  { image: 'images/jordan_4_pine_green.png', description: 'jordan 4 pine green' },
+  { image: 'images/adidas_campus_bad_bunny_wild_moss.png', description: 'adidas campus bad bunny wild moss' },
+  { image: 'images/sandalias_nike_offcourt.png', description: 'sandalias nike offcourt' },
+  { image: 'images/sandalias_uptempo_red.png', description: 'sandalias uptempo red' },
+  { image: 'images/sandalias_nike_offcourt_green.png', description: 'sandalias nike offcourt green' },
+  { image: 'images/nike_dunk_momia.png', description: 'nike dunk momia' },
+  { image: 'images/adidas_campus_00s_dark_green.png', description: 'adidas campus 00s dark green' },
+  { image: 'images/jordan_1_shattered_backboard.png', description: 'jordan 1 shattered backboard' },
+  { image: 'images/af1_green.png', description: 'af1 green' },
+  { image: 'images/nike_uptempo_sail_guava.png', description: 'nike uptempo sail guava' },
+  { image: 'images/nike_uptempo_black.png', description: 'nike uptempo black' },
+  { image: 'images/adidas_forum_84_cream.png', description: 'adidas forum 84 cream' },
+  { image: 'images/adidas_forum_triple_white.png', description: 'adidas forum triple white' },
+  { image: 'images/jordan_1_mid_hyper_pink.png', description: 'jordan 1 mid hyper pink' },
+  { image: 'images/af1_shadow_white.png', description: 'af1 shadow white' },
+  { image: 'images/jordan_1_mid_carbon_fiber.png', description: 'jordan 1 mid carbon fiber' },
+  { image: 'images/nike_dunk_low_teddy_bear.png', description: 'Nike Dunk Low Teddy Bear' },
+  { image: 'images/lv_nike_af1.png', description: 'lv nike af1' },
+  { image: 'images/adidas_forum_low_white.png', description: 'adidas forum low white' },
+  { image: 'images/nike_dunk_yankees.png', description: 'nike dunk yankees' },
+  { image: 'images/balenciaga_triple_s_grey.png', description: 'balenciaga triple s grey' },
+  { image: 'images/jordan_11_cool_grey.png', description: 'jordan 11 cool grey' },
+  { image: 'images/amiri_ma1.png', description: 'amiri ma1' },
+  { image: 'images/nike_air_max_plus_tn_white.png', description: 'nike air max plus tn white' },
+  { image: 'images/nike_uptempo_olympic.png', description: 'nike uptempo olympic' },
+  { image: 'images/jordan_1_mid_digital_pink.png', description: 'jordan 1 mid digital pink' },
+  { image: 'images/jordan_1_high_mocha.png', description: 'jordan 1 high mocha' },
+  { image: 'images/bape_sta_black.png', description: 'bape sta black' },
+  { image: 'images/jordan_11_bred_black.png', description: 'jordan 11 bred black' },
+  { image: 'images/nike_dunk_pigeon.png', description: 'nike dunk pigeon' },
+  { image: 'images/sandalias_uptempo_black.png', description: 'sandalias uptempo black' }
   // Agrega más productos según sea necesario
 ];
 
