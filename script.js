@@ -171,3 +171,8 @@ previewContainer.addEventListener('click', closePreview);
 function closePreview() {
   previewContainer.style.display = 'none';
 }
+
+// Nueva función para redirigir a la página de "Ropa con Flow"
+function redirectToRopaPage() {
+  window.location.href = 'ropa_con_flow.html';
+}
