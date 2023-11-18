@@ -3,34 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Catálogo de Productos</title>
+  <title>Ropa y Zapatillas</title>
   <!-- Agrega jQuery para Bitly -->
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!-- Enlaza tu archivo de estilo CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="banner">
-    <!-- Banner para la portada -->
-    <img src="images/baner portada.png" alt="Portada">
+
+<!-- Zapatillas -->
+<div id="zapatillas-container">
+  <div id="banner-zapatillas">
+    <!-- Banner para la portada de Zapatillas -->
+    <img src="images/baner portada.png" alt="Banner de Zapatillas">
   </div>
 
-   <!-- Nuevo botón para "Ropa con Flow" -->
-  <button id="ropa-btn" onclick="redirectToRopaPage()">Ropa con Flow</button>
-  
-  <div id="catalog">
-    <!-- Catálogo de productos -->
-    <!-- La estructura se llenará dinámicamente con JavaScript -->
+  <!-- Resto del contenido de Zapatillas -->
+</div>
+
+<!-- Ropa -->
+<div id="ropa-container">
+  <div id="banner-ropa">
+    <!-- Banner para la portada de Ropa -->
+    <img src="images/baner portada.png" alt="Banner de Ropa">
   </div>
 
-  <div id="preview-container">
-    <span class="close-btn" onclick="closePreview()">×</span>
-    <div id="preview-content">
-      <img id="preview-image" alt="Vista Previa">
-      <p id="preview-description"></p>
-      <a id="whatsapp-btn" href="#" target="_blank">Pedir por WhatsApp <img src="images/whatsapp_icon.png" alt="WhatsApp"></a>
-    </div>
-  </div>
-  
-  <script src="script.js"></script>
+  <!-- Resto del contenido de Ropa -->
+</div>
+
+<!-- Script para Zapatillas -->
+<script src="script-sneakers.js"></script>
+
+<!-- Script para Ropa -->
+<script src="script-ropa.js"></script>
+
 </body>
 </html>
